@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  * @version 1.0
  * @date 2020/4/13 13:52
  */
-@EnableEurekaServer//标识是一个Eureka
+@EnableEurekaServer //Eureka 启动中心
 @SpringBootApplication
 public class GoverCenterApplication {
     public static void main(String[] args) {
