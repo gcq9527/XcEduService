@@ -1,0 +1,14 @@
+package com.xuecheng.learning.dao;
+
+import com.xuecheng.framework.domain.learning.XcLearningCourse;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+/**
+ * @author yd
+ * @version 1.0
+ * @date 2020/4/28 18:51
+ */
+public interface XcLearningCourseRepository extends JpaRepository<XcLearningCourse,String> {
+    //根据用户id和课程id查询
+    XcLearningCourse findByUserIdAndCourseId(String userId,String courseId);
+}
